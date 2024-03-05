@@ -11,16 +11,21 @@ Syria Tel's Sales and Marketing department faces challenges such as:
 3.	Limited budget: A recent budget reduction necessitates more efficient and targeted marketing strategies.
 
 ## Objectives:
-	Increased Profitability: Reduced churn and optimized campaigns will directly translate to higher customer lifetime value and improved profitability.
-	Enhanced Efficiency: Data-driven insights guide resource allocation towards the most effective marketing strategies, maximizing ROI even within budget constraints.
-	Competitive Advantage: By leveraging customer data effectively, Syria Tel can gain a competitive edge by offering targeted solutions and personalized experiences
+- Increased Profitability: Reduced churn and optimized campaigns will directly translate to higher customer lifetime value and improved profitability.
+- Enhanced Efficiency: Data-driven insights guide resource allocation towards the most effective marketing strategies, maximizing ROI even within budget constraints.
+-Competitive Advantage: By leveraging customer data effectively, Syria Tel can gain a competitive edge by offering targeted solutions and personalized experiences
 
 ## Business Understanding
 Implementing a customer churn prediction system offers several advantages:
+
 •	Proactive Customer Retention: Identify customers at high risk of churn, allowing the team to implement targeted retention strategies (e.g., loyalty programs, personalized offers) before they defect, saving valuable customers and reducing churn rates.
+
 •	Data-Driven Decision Making: Gain deeper insights into customer behavior, preferences, and pain points. This empowers the Sales and Marketing department to:
+
 •	Optimize Campaigns: Target high-potential customers with relevant and personalized offerings, leading to significantly improved conversion rates and ROI.
+
 •	Focus on Customer Needs: Develop and deploy campaigns that address specific customer pain points, resulting in increased customer engagement, satisfaction, and loyalty.
+
 ## Modelling
 
 ## Evaluation
