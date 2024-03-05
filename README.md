@@ -13,7 +13,7 @@ Syria Tel's Sales and Marketing department faces challenges such as:
 ## Objectives:
 - Increased Profitability: Reduced churn and optimized campaigns will directly translate to higher customer lifetime value and improved profitability.
 - Enhanced Efficiency: Data-driven insights guide resource allocation towards the most effective marketing strategies, maximizing ROI even within budget constraints.
--Competitive Advantage: By leveraging customer data effectively, Syria Tel can gain a competitive edge by offering targeted solutions and personalized experiences
+- Competitive Advantage: By leveraging customer data effectively, Syria Tel can gain a competitive edge by offering targeted solutions and personalized experiences
 
 ## Business Understanding
 Implementing a customer churn prediction system offers several advantages:
