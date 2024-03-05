@@ -4,6 +4,7 @@
 ## Executive Summary:
 This proposal outlines the implementation of a customer churn prediction system for Syria Tel's Sales and Marketing department. This system, leveraging the power of machine learning and data analytics, aims to address key challenges and unlock significant growth opportunities, ultimately enhancing profitability and customer satisfaction.
 
+# Business Understanding
 ## Problem Statement:
 Syria Tel's Sales and Marketing department faces challenges such as:
 1.	Low conversion rates: Attracting the wrong customer profile leads to wasted resources and high churn (customer defection).
@@ -15,7 +16,7 @@ Syria Tel's Sales and Marketing department faces challenges such as:
 - Enhanced Efficiency: Data-driven insights guide resource allocation towards the most effective marketing strategies, maximizing ROI even within budget constraints.
 - Competitive Advantage: By leveraging customer data effectively, Syria Tel can gain a competitive edge by offering targeted solutions and personalized experiences
 
-## Business Understanding
+## Proposed solution
 Implementing a customer churn prediction system offers several advantages:
 
 •	Proactive Customer Retention: Identify customers at high risk of churn, allowing the team to implement targeted retention strategies (e.g., loyalty programs, personalized offers) before they defect, saving valuable customers and reducing churn rates.
