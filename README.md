@@ -57,6 +57,10 @@ The following actions where take during the data pre-processing:
   
   -  Outlining the ranking of features in descending order through feature selection.
 
+# EDA
+![international_churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/841edd84-23b1-405e-b0f9-85f6783401bd)
+
+
 ## MODELING
 
 Logistic Model Performance: the Logistic Regression's overall performance was classified as follows starting with the main objective of the model: 	
