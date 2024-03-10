@@ -138,27 +138,28 @@ Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While
 After implementing the hyper parameters the models new performance was as follows:
 
 
-Feature Importance
+![360_F_456528158_qxlh072scPnSUiOljmVQ0Ha09Nmt2klY](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/4563dde0-3a09-4e02-9bb4-ba4c2a1c7ae5)
 
 ## Limitations
 
 The main limitation of the dataset is the limited data. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers. 
 
-**Feature relevance**: The features available in the dataset proved to be informative for ones for predicting churn however an inclusion of various variables may improve the system’s ability to provide more meaningful.
+**Feature relevance**: The features available in the dataset proved to be informative for ones for predicting churn however an inclusion of various variables may improve the system’s ability to provide more meaningful insights such as customer comments.
 
-Imbalanced distribution: The dataset might have an imbalanced distribution of churners (101) and non-churners (566). This can bias the model towards the majority class and lead to poor performance in predicting the minority class (churners) however this was addreeses using SMOTE.
+**Imbalanced distribution**: The dataset might have an imbalanced distribution of churners (101) and non-churners (566). This can bias the model towards the majority class and lead to poor performance in predicting the minority class (churners) however this was addreeses using SMOTE oversampling .
 
 # Concluesion
+
 ## Recommendations
 
-1.	Focus on Customer Retention: Given that "Total Charge" and "Customer Service Calls" are the top two features contributing to churn prediction, there should be a concerted effort to improve customer satisfaction and minimize the need for service calls. This may involve providing better service, resolving issues promptly, and offering incentives for long-term customers.
+1.	**Focus on Customer Retention:** Given that "Total Charge" and "Customer Service Calls" are the top two features contributing to churn prediction, there should be a concerted effort to improve customer satisfaction and minimize the need for service calls. This may involve providing better service, resolving issues promptly, and offering incentives for long-term customers.
 
-2.	Monitor Usage Patterns: Pay close attention to "Total Minutes," "Total International Calls," and "Total International Minutes" as they indicate usage patterns. Customers with high usage, especially in international calls, may be at a higher risk of churn. Understanding their needs and preferences can help tailor retention strategies.
+2.	**Monitor Usage Patterns:** Pay close attention to "Total Minutes," "Total International Calls," and "Total International Minutes" as they indicate usage patterns. Customers with high usage, especially in international calls, may be at a higher risk of churn. Understanding their needs and preferences can help tailor retention strategies.
 
-3.	Promote Additional Services: The presence of "International Plan" as a significant feature suggests that customers with such plans may have different needs or behaviors. Targeted promotions or offers for international calling features could help retain these customers and attract new ones.
+3.	**Promote Additional Services:** The presence of "International Plan" as a significant feature suggests that customers with such plans may have different needs or behaviors. Targeted promotions or offers for international calling features could help retain these customers and attract new ones.
 
-4.	Improve Communication: The "Number of Voicemail Messages" and "Voice Mail Plan" features indicate preferences for voicemail usage. Enhancing voicemail services or offering alternative communication channels based on customer preferences can improve satisfaction and retention.
+4.	**Improve Communication:** The "Number of Voicemail Messages" and "Voice Mail Plan" features indicate preferences for voicemail usage. Enhancing voicemail services or offering alternative communication channels based on customer preferences can improve satisfaction and retention.
 
 
-5.	Customer Engagement: Since "Total Calls" and "Account Length" are also significant features, fostering ongoing engagement with customers and rewarding loyalty can help reduce churn. Special offers, loyalty programs, or personalized communications can enhance customer satisfaction and retention.
+5.	**Customer Engagement:** Since "Total Calls" and "Account Length" are also significant features, fostering ongoing engagement with customers and rewarding loyalty can help reduce churn. Special offers, loyalty programs, or personalized communications can enhance customer satisfaction and retention.
 
