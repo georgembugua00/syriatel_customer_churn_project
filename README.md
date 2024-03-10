@@ -1,10 +1,13 @@
 # Customer Churn Predictor System for Syria Tel
-![Syriatel_Logo svg-e1591354387337](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/13138966-145f-4bb4-beba-0654cf355d56)
+![WhatsApp Image 2024-03-10 at 7 25 07 PM](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/268d0759-89f9-4e32-9035-55feb711a9c4)
+
 # Overview
 ## Executive Summary:
 This proposal outlines the implementation of a customer churn prediction system for Syria Tel's Sales and Marketing department. This system, leveraging the power of machine learning and data analytics, aims to address key challenges and unlock significant growth opportunities, ultimately enhancing profitability and customer satisfaction.
 
 # Business Understanding
+![WhatsApp Image 2024-03-10 at 7 25 05 PM](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/73c16c9e-30d8-4776-9511-3bee76f9a8d3)
+
 ## Problem Statement:
 Syria Tel's Sales and Marketing department faces challenges such as:
 1.	Low conversion rates: Attracting the wrong customer profile leads to wasted resources and high churn (customer defection).
@@ -57,55 +60,60 @@ The following actions where take during the data pre-processing:
   
   -  Outlining the ranking of features in descending order through feature selection.
 
-# EDA
-![international_churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/841edd84-23b1-405e-b0f9-85f6783401bd)
+![WhatsApp Image 2024-03-10 at 10 09 58 PM (1)](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/d73dc4fd-2f3d-49b9-ba22-4c5493a41bb9)
 
+## Model Performance
 
-## MODELING
+1. Decision Trees Algorithm
 
-Logistic Model Performance: the Logistic Regression's overall performance was classified as follows starting with the main objective of the model: 	
+The main classification metrics of interest were Precision, Recall and AUC-ROC score, this due the fact that the purpose of the model was to save the stakeholders money through correct classification of customers that are prone to churn. Below is a breakdown to the models performance 
 
-Precision - Precision for class 0 (customers who do not churn) is high with it being correct 85% of the time. However the precision for class 1 (customers who churn) is relatively low (0.43), indicating it is correct only 43% of the time. Since precision of the system is important introduction of Hyperparmeter will be nesscary before it can be implememented
+•	**Precision:** Precision measures the proportion of true positive predictions among all positive predictions made by the model. In this case, the precision for predicting churn (True) is 0.91, indicating that out of all the customers predicted to churn, 91% actually did churn.
 
-•	Recall:
-Recall for class 0 (customers who do not churn) is high (0.99), indicating that the model correctly identifies the vast majority of customers who do not churn and for class 1 (customers who churn) is very low (0.03), indicating that the model misses the majority of customers who actually churn.
+•	**Recall:** Recall measures the proportion of true positive predictions among all actual positive instances in the dataset. The recall for predicting churn (True) is 0.73, suggesting that the model correctly identified 73% of all churn cases.
 
-•	F1-score:
-The F1-score, which balances precision and recall, is higher for class 0 (0.92) compared to class 1 (0.06). This reflects the imbalance in the precision and recall values.
+•	**F1-score:** The F1-score is the harmonic mean of precision and recall, providing a balance between the two metrics. The F1-score for predicting churn (True) is 0.81, indicating a reasonable balance between precision and recall.
 
-### Random Forest Performance**
+• **AUC-ROC score:** this score measures the model's ability to distinguish between positive and negative classes across different thresholds, is 0.861.
 
-**• Precision:**
+2. XGB Classifier Algorithm
 
-Class 0 (not churned): 97% of the customers predicted as not churned by the model are actually not churned. This indicates the model is good at identifying true negatives (correctly classifying customers who won't churn).
-Class 1 (churned): 98% of the customers predicted as churned by the model actually churned. This suggests the model is also good at identifying true positives (correctly classifying customers who will churn).
+The XGB Classifier Algorithm was deemed suitable for this due to it capabilities with handling imbalanced distributions. The classification metrics from the algorthim was above average with the following weakness:
 
-**• Recall:**
+- Model Weaknesses:
 
-Class 0 (not churned): The model correctly identifies 100% of the actual non-churning customers. This is an ideal scenario, meaning the model doesn't miss any true negatives.
-Class 1 (churned): The model identifies 85% of the actual churners. While this is still good, it indicates that the model misses 15% of the actual churners, which could be potential customers to focus retention efforts on.
+Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While precision is high for both classes, recall for churners (0.80) is concerning. This means the model misses 20% of actual churners, potentially leading to lost revenue or missed retention efforts. More importantly the model showed signs of overfitting with it high accuracy and low recall for customer churn. 
 
-**• F1-score:**
+- Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
+    
+    1. learning_rate
+    
+    2. n_estimators
+    
+    3. max_depth
+    
+    4. min_child_weight
+    
+    5. gamma
+    
+    6. reg_alpha
+    
+    7. reg_lambda
 
-Class 0 (not churned): 0.99, indicating a good balance between precision and recall for the non-churning class.
-Class 1 (churned): 0.91, suggesting a slightly lower balance between precision and recall for the churned class, due to the lower recall.
+## XGB Classifier Tuned Performance
+
+After implementing the hyper parameters the models new performance was as follows:
+
 
 Feature Importance
 
-1.	Total Charge (0.288462): The total amount charged to the customer, which indicates the revenue generated from each customer.
-2.	Customer Service Calls (0.140143): The number of customer service calls made by the customer, which may indicate dissatisfaction or issues with the service.
-3.	Total Minutes (0.119068): The total number of minutes used by the customer, which may correlate with their usage patterns and engagement with the service.
-4.	International Plan (0.097676): Whether the customer has an international calling plan, which may indicate their usage behavior and willingness to pay for additional services.
-5.	Total International Calls (0.054485): The total number of international calls made by the customer, which may indicate their communication needs and preferences.
-6.	Total International Minutes (0.051449): The total number of international minutes used by the customer, which may also indicate their communication needs and preferences.
-7.	Total International Charge (0.050201): The total charges incurred from international calls, which may reflect the customer's usage and spending behavior.
-8.	Total Calls (0.043529): The total number of calls made by the customer, which may indicate their level of engagement with the service.
-9.	Account Length (0.040044): The length of time the customer has been with the service, which may indicate their loyalty and satisfaction.
-10.	Number of Voicemail Messages (0.038595): The number of voicemail messages received by the customer, which may indicate their communication preferences and engagement with the service.
-11.	State (0.032340): The state in which the customer resides, which may reflect regional differences in usage patterns and demographics.
-12.	Voice Mail Plan (0.031999): Whether the customer has a voicemail plan, which may indicate their communication preferences and usage behavior.
-13.	Area Code (0.012010): The area code associated with the customer's phone number, which may also reflect regional differences in usage patterns and demographics.
+## Limitations
 
+The main limitation of the dataset is the limited data. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers. 
+
+**Feature relevance**: The features available in the dataset proved to be informative for ones for predicting churn however an inclusion of various variables may improve the system’s ability to provide more meaningful.
+
+Imbalanced distribution: The dataset might have an imbalanced distribution of churners (101) and non-churners (566). This can bias the model towards the majority class and lead to poor performance in predicting the minority class (churners) however this was addreeses using SMOTE.
 Recommendations
 
 1.	Focus on Customer Retention: Given that "Total Charge" and "Customer Service Calls" are the top two features contributing to churn prediction, there should be a concerted effort to improve customer satisfaction and minimize the need for service calls. This may involve providing better service, resolving issues promptly, and offering incentives for long-term customers.
