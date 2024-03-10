@@ -60,8 +60,6 @@ The following actions where take during the data pre-processing:
   
   -  Outlining the ranking of features in descending order through feature selection.
 
-# EDA
-![international_churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/841edd84-23b1-405e-b0f9-85f6783401bd)
 ![WhatsApp Image 2024-03-10 at 10 09 58 PM (1)](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/d73dc4fd-2f3d-49b9-ba22-4c5493a41bb9)
 
 ## Model Performance
