@@ -30,7 +30,7 @@ Implementing a customer churn prediction system offers several advantages:
 
 •	Focus on Customer Needs: Develop and deploy campaigns that address specific customer pain points, resulting in increased customer engagement, satisfaction, and loyalty.
 
-# DATA UNDERSTANDING
+# Data Understanding
 -The data was sourced from Kaggle
 
 Data Size: 
@@ -39,7 +39,7 @@ The dataset has 3333 rows and 21 columns
 Data Source:
 The dataset contains information regarding Syriatel's customers behaviours such as total charge, total calls and total minutes. Also represented is the customer prefernces such as international plan ,voice mail plan. Finaly the customer demographics have been provided with columns such as state and area code.
 
-Data Types:
+## Data Types:
 •	Object: 4 columns (state, phone number, international plan, voice mail plan)
 •	Integer: 8 columns (account length, area code, number vmail messages, total day calls, total eve calls, total night calls, total intl calls, customer service calls)
 •	Float: 8 columns (total day minutes, total day charge, total eve minutes, total eve charge, total night minutes, total night charge, total intl minutes, total intl charge)
@@ -113,13 +113,13 @@ The main classification metrics of interest were Precision, Recall and AUC-ROC s
 
 The XGB Classifier Algorithm was deemed suitable for this due to it capabilities with handling imbalanced distributions. The classification metrics from the algorthim was above average with the following weakness:
 
-- Model Weaknesses:
+- **Model Weaknesses:**
 
 Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While precision is high for both classes, recall for churners (0.80) is concerning. This means the model misses 20% of actual churners, potentially leading to lost revenue or missed retention efforts. More importantly the model showed signs of overfitting with it high accuracy and low recall for customer churn. 
 
 - Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
     
-   1. learning_rate: Controls the step size for updating model weights during training
+1. learning_rate: Controls the step size for updating model weights during training
 
 2. n_estimators: Specifies the number of decision trees (boosting rounds) in the ensemble model.
 
@@ -138,11 +138,12 @@ Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While
 After implementing the hyper parameters the models new performance was as follows:
 
 
-![360_F_456528158_qxlh072scPnSUiOljmVQ0Ha09Nmt2klY](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/4563dde0-3a09-4e02-9bb4-ba4c2a1c7ae5)
+
 
 ## Limitations
+![360_F_456528158_qxlh072scPnSUiOljmVQ0Ha09Nmt2klY](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/4563dde0-3a09-4e02-9bb4-ba4c2a1c7ae5)
 
-The main limitation of the dataset is the limited data. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers. 
+The main limitations of the dataset was the limited data. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers data or test data. 
 
 **Feature relevance**: The features available in the dataset proved to be informative for ones for predicting churn however an inclusion of various variables may improve the system’s ability to provide more meaningful insights such as customer comments.
 
