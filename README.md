@@ -1,10 +1,13 @@
 # Customer Churn Predictor System for Syria Tel
-![Syriatel_Logo svg-e1591354387337](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/13138966-145f-4bb4-beba-0654cf355d56)
+![WhatsApp Image 2024-03-10 at 7 25 07 PM](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/268d0759-89f9-4e32-9035-55feb711a9c4)
+
 # Overview
 ## Executive Summary:
 This proposal outlines the implementation of a customer churn prediction system for Syria Tel's Sales and Marketing department. This system, leveraging the power of machine learning and data analytics, aims to address key challenges and unlock significant growth opportunities, ultimately enhancing profitability and customer satisfaction.
 
 # Business Understanding
+![WhatsApp Image 2024-03-10 at 7 25 05 PM](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/73c16c9e-30d8-4776-9511-3bee76f9a8d3)
+
 ## Problem Statement:
 Syria Tel's Sales and Marketing department faces challenges such as:
 1.	Low conversion rates: Attracting the wrong customer profile leads to wasted resources and high churn (customer defection).
