@@ -137,7 +137,18 @@ Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While
 
 After implementing the hyper parameters the models new performance was as follows:
 
+Precision for the "True" class: 0.80
+Recall for the "True" class: 0.80
+F1-score for the "True" class: 0.80
+Accuracy: 0.94
 
+### Observation:
+
+Precision: Precision measures the accuracy of positive predictions. In the first table, the precision for the "True" class is higher (0.91) compared to the second table (0.80). This indicates that in the first model, when it predicts a customer will churn (positive prediction), it is more likely to be correct.
+
+Recall: Recall measures the ability of the model to correctly identify positive instances. In the first table, the recall for the "True" class is lower (0.73) compared to the second table (0.80). This suggests that the first model may miss more instances of actual churn (false negatives) compared to the second model.
+
+F1-score: The F1-score is the harmonic mean of precision and recall, providing a balance between the two metrics. In the first table, the F1-score for the "True" class is slightly higher (0.81) compared to the second table (0.80), reflecting a slightly better balance between precision and recall.
 
 
 ## Limitations
