@@ -31,27 +31,24 @@ Implementing a customer churn prediction system offers several advantages:
 •	Focus on Customer Needs: Develop and deploy campaigns that address specific customer pain points, resulting in increased customer engagement, satisfaction, and loyalty.
 
 # Data Understanding
--The data was sourced from Kaggle
+-The data was sourced from Kaggle at https://www.kaggle.com/code/becksddf/churn-in-telecoms-dataset
 
 Data Size: 
-The dataset has 3333 rows and 21 columns
+The dataset has 3,333 rows and 21 columns
 
 Data Source:
 The dataset contains information regarding Syriatel's customers behaviours such as total charge, total calls and total minutes. Also represented is the customer prefernces such as international plan ,voice mail plan. Finaly the customer demographics have been provided with columns such as state and area code.
 
 ## Data Types:
 •	Object: 4 columns (state, phone number, international plan, voice mail plan)
+
 •	Integer: 8 columns (account length, area code, number vmail messages, total day calls, total eve calls, total night calls, total intl calls, customer service calls)
+
 •	Float: 8 columns (total day minutes, total day charge, total eve minutes, total eve charge, total night minutes, total night charge, total intl minutes, total intl charge)
+
 •	Boolean: 1 column (churn)
 
 ## Data Pre-Processing
-The dataset was cleaned and pre-processed into to make it suitable for modelling and presentation. The following actions were taken while data cleaning:
-  
-  - Dropping Whitestrips
-  
-  - Dropping insignificant columns
-
 The following actions where take during the data pre-processing:
  
   - Converting the relevant interger columns into binary format using LabelEncoder
@@ -71,7 +68,8 @@ Exploratory data analysis was implemented inorder to transform the data into inf
 
 ### Data Visualization
 The seaborn and matplotlib libraries were utilized throughout the data visualization process.
-  1. Univariate Analysis investigate a variables relationship with itself for example its frequency or value counts.
+ # 1. Univariate Analysis:
+ This analysis investigates a variables relationship with itself for example its frequency or value counts.
 ### Pie Chart Representing Customer Churn
 ![pie_chart_churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/7dc76380-df36-4f4c-8818-f7c63fef5a45)
 
@@ -79,7 +77,9 @@ The seaborn and matplotlib libraries were utilized throughout the data visualiza
 ![voicemail_plan_counts](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/ce6c3aff-ad0b-4d88-9f16-d5a36ab90ecf)
 
      
-  2. Bivariate Analysis investigated the relationship between two variables for relationship between account length and customer churn. this bivariate analysis help paint a cause and effect image as to my customer churn was occuring.
+ # 2. Bivariate Analysis
+ This analysis investigates the relationship between two variables for relationship between account length and customer churn. this bivariate analysis help paint a cause and effect image as to my customer churn was occuring.
+
 ### Bar Graph Represent State with Longest AccountS  
 ![longest_account_length_per_state](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/34e5d346-692f-4386-9441-3efe4bd0e631)
 
@@ -87,7 +87,9 @@ The seaborn and matplotlib libraries were utilized throughout the data visualiza
 
 ![account_length _churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/bd0a82d5-6891-4591-93fc-dabdad31cf13)
      
-  4. Multivariate Analysis investigate the relationship between two or more variables. This was accomplished using seaborns hue parameter or matplotlibs subplots. This granted even more insights into customer churn key drivers
+# 4. Multivariate Analysis
+
+This investigate the relationship between two or more variables. This was accomplished using seaborns hue parameter and  matplotlibs subplots. This granted even more insights into customer churn key drivers
 
 ### Graph Representing the Relationship Between Maximum Account Lenght and Average Churn Rate
 ![maximum_account_length_by_churn](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/42fc28fd-d7d7-4b2e-b700-6952bc6abdfe)
@@ -117,7 +119,7 @@ The XGB Classifier Algorithm was deemed suitable for this due to it capabilities
 
 Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While precision is high for both classes, recall for churners (0.80) is concerning. This means the model misses 20% of actual churners, potentially leading to lost revenue or missed retention efforts. More importantly the model showed signs of overfitting with it high accuracy and low recall for customer churn. 
 
-- Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
+## Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
     
 1. learning_rate: Controls the step size for updating model weights during training
 
@@ -154,7 +156,7 @@ F1-score: The F1-score is the harmonic mean of precision and recall, providing a
 ## Limitations
 ![360_F_456528158_qxlh072scPnSUiOljmVQ0Ha09Nmt2klY](https://github.com/georgembugua00/syriatel_customer_churn_project/assets/151632200/4563dde0-3a09-4e02-9bb4-ba4c2a1c7ae5)
 
-The main limitations of the dataset was the limited data. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers data or test data. 
+The main limitations of the dataset was the limited data quantity. A small or biased dataset might not capture the full spectrum of customer behavior, leading to a model that performs well on the training data but generalizes poorly to unseen customers data or test data. 
 
 **Feature relevance**: The features available in the dataset proved to be informative for ones for predicting churn however an inclusion of various variables may improve the system’s ability to provide more meaningful insights such as customer comments.
 
