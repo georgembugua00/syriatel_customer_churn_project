@@ -162,7 +162,7 @@ The main limitations of the dataset was the limited data quantity. A small or bi
 
 **Imbalanced distribution**: The dataset might have an imbalanced distribution of churners (101) and non-churners (566). This can bias the model towards the majority class and lead to poor performance in predicting the minority class (churners) however this was addreeses using SMOTE oversampling .
 
-# Concluesion
+# Conclusion 
 
 ## Recommendations
 
