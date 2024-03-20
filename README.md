@@ -119,7 +119,7 @@ The XGB Classifier Algorithm was deemed suitable for this due to it capabilities
 
 Balanced Precision and Recall for Non-Churn, Lower for Churn (True Class): While precision is high for both classes, recall for churners (0.80) is concerning. This means the model misses 20% of actual churners, potentially leading to lost revenue or missed retention efforts. More importantly the model showed signs of overfitting with it high accuracy and low recall for customer churn. 
 
-## Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
+- Various hyperparameters were introduced to mitigate this issue and produce a more profitable model. The following where the hyperparameters implemented:
     
 1. learning_rate: Controls the step size for updating model weights during training
 
